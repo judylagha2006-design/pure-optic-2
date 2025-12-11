@@ -1,112 +1,142 @@
-<!DOCTYPE html>
-<html lang="ar">
+<!doctype html>
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>Optique Pure</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Optique — معلومات الاتصال</title>
+  <meta name="description" content="مركز البصريات - معلومات الاتصال، مواعيد، العنوان، واتساب" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- Open Graph (for sharing) -->
+  <meta property="og:title" content="Optique - معلومات الاتصال" />
+  <meta property="og:description" content="اتصل بنا للحجز أو الزيارة — هاتف، واتساب، العنوان" />
+  <meta property="og:image" content="/C:\Users\Eden\Pictures\Screenshots\Screenshot (12).png" />
+
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      direction: rtl;
-      background-color: #f0f4f8;
-      color: #333;
-    }
-    header {
-      background-color: #0077b6;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-    section {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    .card {
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-    .card h2 {
-      margin-top: 0;
-      font-size: 22px;
-      color: #0077b6;
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 15px;
-      background-color: #0077b6;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-      border-radius: 8px;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background-color: #e0e0e0;
-      font-size: 14px;
-    }
+    :root{--bg:#f8fafc;--card:#ffffff;--accent:#0ea5a4;--dark:#0f172a}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--bg); color:var(--dark);}
+    .wrap{max-width:980px;margin:28px auto;padding:18px}
+    .card{background:var(--card);border-radius:14px;box-shadow:0 6px 22px rgba(12,18,26,0.06);padding:20px}
+    header{display:flex;gap:18px;align-items:center}
+    .logo{width:72px;height:72px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:6px 0 0;color:#334155}
+
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
+    .info-list{display:flex;flex-direction:column;gap:12px}
+    .info-row{display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:10px;background:#fbfdff;border:1px solid #eef2f7}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-muted{background:#eef2f7;color:var(--dark)}
+
+    .map{height:220px;border-radius:10px;overflow:hidden}
+    footer{margin-top:14px;text-align:center;color:#64748b;font-size:13px}
+
+    @media (max-width:840px){.grid{grid-template-columns:1fr} .logo{width:56px;height:56px}}
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Optician",
+    "name": "[pure optic]",
+    "image": "https://example.com/logo.png",
+    "telephone": "+96170472 816",
+    
+      "streetAddress": "البحصة بعد مدرسة الرواد",
+      "addressLocality": "عكار ",
+      "postalCode": "0000",
+      "addressCountry": "LB"
+    },
+    "openingHours": "Mo-sat 09:00-17:00",
+    "url": "https://example.com"
+  }
+  </script>
 </head>
+
 <body>
+  <div class="wrap card">
+    <header>
+      <div class="logo"> pure optic</div>
+      <div>
+        <h1>Optique — مركز البصريات</h1>
+        <p class="lead"> (فحص العين، نظارات طبية، عدسات لاصقة) أخصائي فحص نظر.</p>
+      </div>
+    </header>
 
-<header>
-  <h1>pure optic</h1>
-  <p>كل ما تحتاجه لعينيك</p>
-</header>
+    <div class="grid">
+      <div>
+        <div class="info-list">
+          <div class="info-row">
+            <div>
+              <strong>الهاتف</strong><br>
+              <small>+96170472816</small>
+            </div>
+            <div>
+              <a class="btn btn-primary" href="tel:+96170472816">اتصل الآن</a>
+            </div>
+          </div>
 
-<section>
-  <div class="card">
-    <h2>📍 العنوان</h2>
-    <p>عكار البحصة بعد مرسة الرواد</p>
-    <a class="btn" href="https://maps.app.goo.gl/Q44KPu8qjG3bZz9W9" target="_blank">اعرض على الخريطة</a>
+          <div class="info-row">
+            <div>
+              <strong>واتساب</strong><br>
+              <small>+96170472816</small>
+            </div>
+            <div>
+              <a class="btn btn-muted" href="https://wa.me/96170472816" target="_blank" rel="noopener">راسلنا على واتساب</a>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <div>
+              <strong>موقع صفحتنا</strong><br>
+              <small>https://www.instagram.com/pure_optic2?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==</small>
+            </div>
+            <div>
+              <a class="btn btn-muted" href="https://www.instagram.com/pure_optic2?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">زوروا الموقع</a>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <div>
+              <strong>العنوان</strong><br>
+              <small > البحصة بعد مدرسة الرواد </small>
+            </div>
+            <div>
+              <a class="btn btn-primary" href="https://maps.app.goo.gl/Q44KPu8qjG3bZz9W9" target="_blank" rel="noopener">اعرض على الخريطة</a>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <div>
+              <strong>ساعات العمل</strong><br>
+              <small>الإثنين — السبت: 09:00 — 17:00</small>
+            </div>
+            <div>
+              <a class="btn btn-muted" href="https://docs.google.com/forms/d/e/1FAIpQLSebSUxg6Pynt9HmBKUe5NQnkdH8bHtu4t6qcyiR1X7qgMNUXg/viewform?usp=publish-editor">حجز موعد</a>
+            </div>
+          </div>
+        </div>
+
+       
+      <aside>
+        <div class="card map">
+          <!-- استبدل بـ iframe خرائط جوجل أو صورة الخريطة الخاصة بك -->
+          <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://maps.app.goo.gl/Q44KPu8qjG3bZz9W9" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+         
+    </div>
+
+    <footer>
+      © <span id="year"></span> Optique — كل الحقوق محفوظة
+    </footer>
   </div>
 
-  <div class="card">
-    <h2>🕒 ساعات العمل</h2>
-    <p>الاثنين – السبت: 09:00 – 17:00</p>
-  </div>
-
-  <div class="card">
-    <h2>📞 التواصل</h2>
-    <p>الهاتف:70472816</p>
-    <p>واتساب: 70472816</p>
-    <p>موقع صفحتنا:"https://www.instagram.com/pure_optic2?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="</p>
-  </div>
-
-  <div class="card">
-    <h2>📅 حجز إلكتروني</h2>
-    <p>يمكنك الحجز عبر النموذج التالي أو الاتصال بنا مباشرة.</p>
-    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSebSUxg6Pynt9HmBKUe5NQnkdH8bHtu4t6qcyiR1X7qgMNUXg/viewform?usp=publish-editor" target="_blank">نموذج الحجز</a>
-  </div>
-
-  <div class="card">
-    <h2>🗺️ موقعنا على الخريطة</h2>
-    <iframe src="https://www.google.com/maps?q=مدرسة%20الرؤية%20الحديثة&output=embed" allowfullscreen loading="lazy"></iframe>
-  </div>
-</section>
-
-<footer>
-  © <span id="year"></span> Optique Pure – كل الحقوق محفوظة
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
